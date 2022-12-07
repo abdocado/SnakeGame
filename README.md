@@ -1,4 +1,4 @@
-# SnakeGame
+# Snake Game 🐍
 
 ## This is a project that will teach me how to implement DevOps practices when developing an application
 
