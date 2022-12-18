@@ -10,35 +10,25 @@ screen.title("Simple Snake Game 🐍")
 screen.bgcolor('black')
 
 # Size of the window
-screen.setup(500, 500)
-
-# Animation
-screen.tracer(0)
+screen.setup(800, 800)
 
 # Snake
 snake = turtle.Turtle()
 snake.shape('square')
 snake.color('white')
 
-# Speed of animation, 0 being fastest
-snake.speed(0)
-
 # No drawing
 snake.penup()
-snake.direction = "stop"
+snake.direction = "left"
 
 
 def move():
-    if snake.direction == "up":
+    if snake.direction == "left":
         y = snake.ycor()
         snake.sety(y + 20)
 
-
-
 while True:
     screen.update()
-
-# Keep the window open
-screen.mainloop()
-
-
+    move()
+    time.sleep(1)
+    
